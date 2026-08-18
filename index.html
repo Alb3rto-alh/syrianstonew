@@ -1,0 +1,1570 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<meta
+name="description"
+content="Αλχάτζι Αλμπέρτο — Συριακές πέτρες για οικοδομικές εφαρμογές, επενδύσεις και κατασκευές."
+>
+
+<title>Αλχάτζι Αλμπέρτο | Συριακές Πέτρες</title>
+
+<style>
+
+:root {
+--brown: #4b3a2a;
+--dark: #30251b;
+--sand: #f3eee5;
+--sand-2: #e8dfd1;
+--gold: #b28752;
+--gold-dark: #8c673e;
+--text: #3f3428;
+--muted: #766653;
+--white: #ffffff;
+
+--shadow:
+0 12px 35px rgba(70, 50, 30, 0.14);
+}
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html {
+scroll-behavior: smooth;
+}
+
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+
+background: var(--sand);
+
+color: var(--text);
+
+line-height: 1.6;
+}
+
+
+img {
+display: block;
+max-width: 100%;
+}
+
+
+a {
+color: inherit;
+}
+
+
+/* =========================
+HEADER
+========================== */
+
+header {
+
+position: sticky;
+
+top: 0;
+
+z-index: 1000;
+
+background: rgba(75, 58, 42, 0.97);
+
+color: var(--white);
+
+padding: 17px 7%;
+
+display: flex;
+
+align-items: center;
+
+justify-content: space-between;
+
+gap: 25px;
+
+box-shadow:
+0 4px 18px rgba(0,0,0,.18);
+
+backdrop-filter: blur(8px);
+}
+
+
+.logo {
+
+font-size: 23px;
+
+font-weight: 800;
+
+letter-spacing: .5px;
+
+white-space: nowrap;
+}
+
+
+nav {
+
+display: flex;
+
+flex-wrap: wrap;
+
+justify-content: flex-end;
+
+gap: 7px 22px;
+}
+
+
+nav a {
+
+color: white;
+
+text-decoration: none;
+
+font-weight: 700;
+
+font-size: 15px;
+
+transition: .25s ease;
+}
+
+
+nav a:hover {
+color: #d9bb8b;
+}
+
+
+/* =========================
+HERO
+========================== */
+
+.hero {
+
+min-height: 78vh;
+
+display: grid;
+
+place-items: center;
+
+text-align: center;
+
+padding: 90px 20px;
+
+background:
+
+linear-gradient(
+rgba(45, 32, 21, .52),
+rgba(45, 32, 21, .66)
+),
+
+url("images/hero.jpg")
+center/cover
+no-repeat;
+
+position: relative;
+}
+
+
+.hero-content {
+
+max-width: 900px;
+
+color: white;
+}
+
+
+.eyebrow {
+
+display: inline-block;
+
+margin-bottom: 18px;
+
+padding: 7px 15px;
+
+border:
+1px solid rgba(255,255,255,.5);
+
+border-radius: 999px;
+
+background:
+rgba(0,0,0,.16);
+
+font-size: 14px;
+
+font-weight: 700;
+
+letter-spacing: .8px;
+
+text-transform: uppercase;
+}
+
+
+.hero h1 {
+
+font-size:
+clamp(40px, 6vw, 70px);
+
+line-height: 1.08;
+
+margin-bottom: 20px;
+
+text-shadow:
+0 4px 18px rgba(0,0,0,.35);
+}
+
+
+.hero p {
+
+max-width: 700px;
+
+margin:
+0 auto 32px;
+
+font-size:
+clamp(18px, 2.2vw, 22px);
+
+color: #f7f1e7;
+}
+
+
+.button {
+
+display: inline-block;
+
+background: var(--gold);
+
+color: white;
+
+text-decoration: none;
+
+padding: 14px 26px;
+
+border-radius: 8px;
+
+font-weight: 800;
+
+box-shadow:
+0 7px 20px rgba(0,0,0,.2);
+
+transition: .25s ease;
+}
+
+
+.button:hover {
+
+background:
+var(--gold-dark);
+
+transform:
+translateY(-2px);
+}
+
+
+/* =========================
+GENERAL SECTIONS
+========================== */
+
+section {
+padding: 85px 7%;
+}
+
+
+.section-title {
+
+max-width: 850px;
+
+margin:
+0 auto 48px;
+
+text-align: center;
+}
+
+
+.section-title h2 {
+
+font-size:
+clamp(30px, 4vw, 42px);
+
+color:
+var(--brown);
+
+margin-bottom: 10px;
+}
+
+
+.section-title p {
+
+color:
+var(--muted);
+
+font-size: 17px;
+}
+
+
+/* =========================
+ABOUT
+========================== */
+
+.about {
+background: var(--sand-2);
+}
+
+
+.about-container {
+
+max-width: 1150px;
+
+margin: auto;
+
+display: grid;
+
+grid-template-columns:
+1.05fr .95fr;
+
+gap: 55px;
+
+align-items: center;
+}
+
+
+.about-image {
+position: relative;
+}
+
+
+.about-image img {
+
+width: 100%;
+
+height: 460px;
+
+object-fit: cover;
+
+border-radius: 16px;
+
+box-shadow:
+var(--shadow);
+}
+
+
+.about-text h3 {
+
+font-size: 31px;
+
+color:
+var(--brown);
+
+margin-bottom: 18px;
+}
+
+
+.about-text p {
+
+margin-bottom: 15px;
+
+color: #625343;
+
+font-size: 17px;
+}
+
+
+.about-points {
+
+list-style: none;
+
+margin-top: 22px;
+}
+
+
+.about-points li {
+
+margin: 10px 0;
+
+font-weight: 700;
+}
+
+
+.about-points span {
+
+color:
+var(--gold-dark);
+
+margin-right: 8px;
+}
+
+
+/* =========================
+PRODUCTS
+========================== */
+
+.products {
+background: var(--sand);
+}
+
+
+.product-grid {
+
+max-width: 1200px;
+
+margin: auto;
+
+display: grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap: 28px;
+}
+
+
+.product-card {
+
+background: white;
+
+border-radius: 15px;
+
+overflow: hidden;
+
+box-shadow:
+0 7px 24px rgba(70,50,30,.12);
+
+transition: .28s ease;
+}
+
+
+.product-card:hover {
+
+transform:
+translateY(-7px);
+
+box-shadow:
+0 15px 35px
+rgba(70,50,30,.18);
+}
+
+
+.product-card img {
+
+width: 100%;
+
+height: 310px;
+
+object-fit: cover;
+}
+
+
+.product-info {
+
+padding: 22px;
+}
+
+
+.product-info h3 {
+
+color:
+var(--brown);
+
+font-size: 22px;
+
+margin-bottom: 8px;
+}
+
+
+.product-info p {
+
+color:
+var(--muted);
+}
+
+
+/* =========================
+WHY US
+========================== */
+
+.services {
+
+background:
+#d9cfbe;
+}
+
+
+.service-grid {
+
+max-width: 1100px;
+
+margin: auto;
+
+display: grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap: 25px;
+}
+
+
+.service {
+
+background:
+#f7f3eb;
+
+padding:
+35px 25px;
+
+text-align: center;
+
+border-radius: 14px;
+
+box-shadow:
+0 5px 18px
+rgba(70,50,30,.08);
+}
+
+
+.service-icon {
+
+font-size: 45px;
+
+margin-bottom: 13px;
+}
+
+
+.service h3 {
+
+color:
+var(--brown);
+
+margin-bottom: 9px;
+
+font-size: 22px;
+}
+
+
+.service p {
+
+color:
+var(--muted);
+}
+
+
+/* =========================
+GALLERY
+========================== */
+
+.gallery {
+
+background:
+var(--sand);
+}
+
+
+.gallery-grid {
+
+max-width: 1200px;
+
+margin: auto;
+
+display: grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap: 16px;
+}
+
+
+.gallery-item {
+
+position: relative;
+
+overflow: hidden;
+
+border-radius: 12px;
+
+background: #ddd;
+
+cursor: zoom-in;
+
+box-shadow:
+0 5px 18px
+rgba(70,50,30,.1);
+}
+
+
+.gallery-item img {
+
+width: 100%;
+
+height: 290px;
+
+object-fit: cover;
+
+transition:
+transform .35s ease;
+}
+
+
+.gallery-item:hover img {
+
+transform:
+scale(1.045);
+}
+
+
+.gallery-label {
+
+position: absolute;
+
+left: 12px;
+
+bottom: 12px;
+
+padding:
+6px 10px;
+
+border-radius: 7px;
+
+color: white;
+
+background:
+rgba(48,37,27,.72);
+
+font-size: 13px;
+
+font-weight: 700;
+}
+
+
+/* =========================
+CONTACT
+========================== */
+
+.contact {
+
+background:
+var(--brown);
+
+color: white;
+
+text-align: center;
+}
+
+
+.contact h2 {
+
+font-size:
+clamp(31px, 4vw, 42px);
+
+margin-bottom: 15px;
+}
+
+
+.contact p {
+
+font-size: 18px;
+
+color:
+#f0e8dc;
+}
+
+
+.phone {
+
+margin:
+24px 0 30px;
+}
+
+
+.phone a {
+
+color:
+#d9bb8b;
+
+text-decoration: none;
+
+font-size:
+clamp(26px, 4vw, 34px);
+
+font-weight: 800;
+}
+
+
+/* =========================
+FOOTER
+========================== */
+
+footer {
+
+background:
+var(--dark);
+
+color:
+#d8ccbc;
+
+text-align: center;
+
+padding:
+24px 7%;
+}
+
+
+/* =========================
+LIGHTBOX
+========================== */
+
+.lightbox {
+
+display: none;
+
+position: fixed;
+
+inset: 0;
+
+z-index: 2000;
+
+background:
+rgba(0,0,0,.88);
+
+padding: 30px;
+
+align-items: center;
+
+justify-content: center;
+}
+
+
+.lightbox.open {
+display: flex;
+}
+
+
+.lightbox img {
+
+max-width: 92vw;
+
+max-height: 88vh;
+
+border-radius: 10px;
+
+box-shadow:
+0 20px 60px
+rgba(0,0,0,.5);
+}
+
+
+.close-lightbox {
+
+position: fixed;
+
+top: 16px;
+
+right: 22px;
+
+color: white;
+
+background: transparent;
+
+border: 0;
+
+font-size: 42px;
+
+line-height: 1;
+
+cursor: pointer;
+}
+
+
+/* =========================
+MOBILE
+========================== */
+
+@media (max-width: 850px) {
+
+header {
+
+flex-direction: column;
+
+padding: 15px 5%;
+
+gap: 10px;
+}
+
+
+nav {
+
+justify-content:
+center;
+
+gap:
+6px 14px;
+}
+
+
+nav a {
+font-size: 13px;
+}
+
+
+.hero {
+
+min-height: 70vh;
+
+padding:
+70px 18px;
+}
+
+
+section {
+padding:
+65px 5%;
+}
+
+
+.about-container {
+
+grid-template-columns: 1fr;
+
+gap: 30px;
+}
+
+
+.about-image img {
+height: 360px;
+}
+
+
+.product-grid,
+.service-grid,
+.gallery-grid {
+
+grid-template-columns: 1fr;
+}
+
+
+.product-card img,
+.gallery-item img {
+
+height: 320px;
+}
+}
+
+
+@media (max-width: 480px) {
+
+.logo {
+font-size: 20px;
+}
+
+
+nav {
+gap:
+5px 10px;
+}
+
+
+nav a {
+font-size: 12px;
+}
+
+
+.hero h1 {
+font-size: 39px;
+}
+
+
+.hero p {
+font-size: 17px;
+}
+
+
+.button {
+padding:
+13px 20px;
+}
+
+
+.about-image img {
+height: 300px;
+}
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+HEADER
+========================== -->
+
+<header>
+
+<div class="logo">
+Αλχάτζι Αλμπέρτο
+</div>
+
+
+<nav aria-label="Κύρια πλοήγηση">
+
+<a href="#home">
+Αρχική
+</a>
+
+<a href="#about">
+Η Εταιρεία
+</a>
+
+<a href="#products">
+Πέτρες
+</a>
+
+<a href="#gallery">
+Φωτογραφίες
+</a>
+
+<a href="#contact">
+Επικοινωνία
+</a>
+
+</nav>
+
+</header>
+
+
+
+<main>
+
+
+<!-- =========================
+ΑΡΧΙΚΗ
+========================== -->
+
+<section
+class="hero"
+id="home"
+>
+
+<div class="hero-content">
+
+<div class="eyebrow">
+Φυσική πέτρα • Οικοδομή • Εφαρμογές
+</div>
+
+
+<h1>
+Συριακές Πέτρες για κάθε οικοδομή
+</h1>
+
+
+<p>
+Ποιότητα, αντοχή και φυσική ομορφιά
+για επενδύσεις, τοιχοποιίες και
+ξεχωριστές κατασκευές.
+</p>
+
+
+<a
+href="#contact"
+class="button"
+>
+Επικοινωνήστε μαζί μας
+</a>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+Η ΕΤΑΙΡΕΙΑ
+========================== -->
+
+<section
+class="about"
+id="about"
+>
+
+<div class="about-container">
+
+
+<div class="about-image">
+
+<img
+src="images/foto1.jpg"
+alt="Συριακές πέτρες σε εφαρμογή"
+>
+
+</div>
+
+
+
+<div class="about-text">
+
+<h3>
+Η εμπειρία μας στην οικοδομή
+</h3>
+
+
+<p>
+Διαθέτουμε Συριακές πέτρες
+και φυσικά πετρώματα που μπορούν
+να χρησιμοποιηθούν σε διαφορετικές
+οικοδομικές εφαρμογές.
+</p>
+
+
+<p>
+Στόχος μας είναι η σωστή εξυπηρέτηση,
+η συνέπεια και η επιλογή υλικού
+που ταιριάζει στις ανάγκες κάθε έργου.
+</p>
+
+
+<ul class="about-points">
+
+<li>
+<span>✓</span>
+Φυσική εμφάνιση
+</li>
+
+<li>
+<span>✓</span>
+Πολλές εφαρμογές
+</li>
+
+<li>
+<span>✓</span>
+Άμεση επικοινωνία
+</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+ΠΡΟΪΟΝΤΑ
+========================== -->
+
+<section
+class="products"
+id="products"
+>
+
+<div class="section-title">
+
+<h2>
+Οι Συριακές Πέτρες μας
+</h2>
+
+<p>
+Δείτε ενδεικτικά δείγματα των
+πετρών και των διαθέσιμων μορφών.
+</p>
+
+</div>
+
+
+
+<div class="product-grid">
+
+
+<!-- ΠΕΤΡΑ 1 -->
+
+<article class="product-card">
+
+<img
+src="images/petra1.jpg"
+alt="Δείγμα Συριακής πέτρας 1"
+>
+
+
+<div class="product-info">
+
+<h3>
+Συριακή Πέτρα 1
+</h3>
+
+<p>
+Δείγμα φυσικής πέτρας
+σε διαφορετικές αποχρώσεις
+και υφές.
+</p>
+
+</div>
+
+</article>
+
+
+
+<!-- ΠΕΤΡΑ 2 -->
+
+<article class="product-card">
+
+<img
+src="images/petra2.jpg"
+alt="Δείγμα Συριακής πέτρας 2"
+>
+
+
+<div class="product-info">
+
+<h3>
+Συριακή Πέτρα 2
+</h3>
+
+<p>
+Ενδεικτική παρουσίαση πέτρας
+σε μορφή κατάλληλη
+για επενδύσεις.
+</p>
+
+</div>
+
+</article>
+
+
+
+<!-- ΠΕΤΡΑ 3 -->
+
+<article class="product-card">
+
+<img
+src="images/petra3.jpg"
+alt="Δείγμα Συριακής πέτρας 3"
+>
+
+
+<div class="product-info">
+
+<h3>
+Συριακή Πέτρα 3
+</h3>
+
+<p>
+Δείγμα φυσικής πέτρας
+με έντονη φυσική υφή
+και γήινους τόνους.
+</p>
+
+</div>
+
+</article>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+ΠΛΕΟΝΕΚΤΗΜΑΤΑ
+========================== -->
+
+<section class="services">
+
+
+<div class="section-title">
+
+<h2>
+Γιατί να μας επιλέξετε
+</h2>
+
+<p>
+Ποιότητα και συνέπεια
+σε κάθε συνεργασία.
+</p>
+
+</div>
+
+
+
+<div class="service-grid">
+
+
+<div class="service">
+
+<div class="service-icon">
+🪨
+</div>
+
+<h3>
+Ποιότητα
+</h3>
+
+<p>
+Φυσικές πέτρες για διαφορετικές
+οικοδομικές και διακοσμητικές ανάγκες.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🏗️
+</div>
+
+<h3>
+Αντοχή
+</h3>
+
+<p>
+Υλικά που μπορούν να δώσουν
+χαρακτήρα και ανθεκτικότητα
+στις κατασκευές.
+</p>
+
+</div>
+
+
+
+<div class="service">
+
+<div class="service-icon">
+🤝
+</div>
+
+<h3>
+Εξυπηρέτηση
+</h3>
+
+<p>
+Προσωπική εξυπηρέτηση και
+άμεση επικοινωνία για πληροφορίες
+και παραγγελίες.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+ΦΩΤΟΓΡΑΦΙΕΣ
+========================== -->
+
+<section
+class="gallery"
+id="gallery"
+>
+
+
+<div class="section-title">
+
+<h2>
+Φωτογραφίες από εφαρμογές
+</h2>
+
+<p>
+Δείτε ενδεικτικά παραδείγματα
+από τις φωτογραφίες που μας έδωσες.
+</p>
+
+</div>
+
+
+
+<div class="gallery-grid">
+
+
+<div
+class="gallery-item"
+data-image="images/foto1.jpg"
+>
+
+<img
+src="images/foto1.jpg"
+alt="Εφαρμογή Συριακής πέτρας"
+>
+
+<span class="gallery-label">
+Εφαρμογή πέτρας
+</span>
+
+</div>
+
+
+
+<div
+class="gallery-item"
+data-image="images/foto2.jpg"
+>
+
+<img
+src="images/foto2.jpg"
+alt="Διακοσμητική εφαρμογή με πέτρα"
+>
+
+<span class="gallery-label">
+Διακοσμητική εφαρμογή
+</span>
+
+</div>
+
+
+
+<div
+class="gallery-item"
+data-image="images/foto3.jpg"
+>
+
+<img
+src="images/foto3.jpg"
+alt="Πέτρινη κατασκευή"
+>
+
+<span class="gallery-label">
+Πέτρινη κατασκευή
+</span>
+
+</div>
+
+
+
+<div
+class="gallery-item"
+data-image="images/foto4.jpg"
+>
+
+<img
+src="images/foto4.jpg"
+alt="Πέτρινος τοίχος"
+>
+
+<span class="gallery-label">
+Τοιχοποιία
+</span>
+
+</div>
+
+
+
+<div
+class="gallery-item"
+data-image="images/foto5.jpg"
+>
+
+<img
+src="images/foto5.jpg"
+alt="Πέτρα σε οικοδομική εφαρμογή"
+>
+
+<span class="gallery-label">
+Οικοδομική εφαρμογή
+</span>
+
+</div>
+
+
+
+<div
+class="gallery-item"
+data-image="images/foto6.jpg"
+>
+
+<img
+src="images/foto6.jpg"
+alt="Πέτρινη επιφάνεια"
+>
+
+<span class="gallery-label">
+Επένδυση
+</span>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- =========================
+ΕΠΙΚΟΙΝΩΝΙΑ
+========================== -->
+
+<section
+class="contact"
+id="contact"
+>
+
+<h2>
+Επικοινωνήστε μαζί μας
+</h2>
+
+
+<p>
+Για πληροφορίες και παραγγελίες
+Συριακών πετρών:
+</p>
+
+
+<div class="phone">
+
+<a href="tel:6909150034">
+📞 6909150034
+</a>
+
+</div>
+
+
+<a
+href="tel:6909150034"
+class="button"
+>
+Καλέστε μας
+</a>
+
+</section>
+
+</main>
+
+
+
+<!-- =========================
+FOOTER
+========================== -->
+
+<footer>
+
+<p>
+© 2026 Αλχάτζι Αλμπέρτο —
+Όλα τα δικαιώματα διατηρούνται.
+</p>
+
+</footer>
+
+
+
+<!-- =========================
+LIGHTBOX
+========================== -->
+
+<div
+class="lightbox"
+id="lightbox"
+aria-hidden="true"
+>
+
+<button
+class="close-lightbox"
+id="closeLightbox"
+aria-label="Κλείσιμο"
+>
+&times;
+</button>
+
+
+<img
+id="lightboxImage"
+src=""
+alt="Μεγέθυνση φωτογραφίας"
+>
+
+</div>
+
+
+
+<!-- =========================
+JAVASCRIPT
+========================== -->
+
+<script>
+
+const lightbox =
+document.getElementById('lightbox');
+
+const lightboxImage =
+document.getElementById('lightboxImage');
+
+const closeLightbox =
+document.getElementById('closeLightbox');
+
+
+document
+.querySelectorAll('.gallery-item')
+.forEach(item => {
+
+item.addEventListener('click', () => {
+
+lightboxImage.src =
+item.dataset.image;
+
+lightbox.classList.add('open');
+
+lightbox.setAttribute(
+'aria-hidden',
+'false'
+);
+
+});
+
+});
+
+
+function closeBox() {
+
+lightbox.classList.remove('open');
+
+lightbox.setAttribute(
+'aria-hidden',
+'true'
+);
+
+lightboxImage.src = '';
+}
+
+
+closeLightbox.addEventListener(
+'click',
+closeBox
+);
+
+
+lightbox.addEventListener(
+'click',
+event => {
+
+if (event.target === lightbox) {
+closeBox();
+}
+
+}
+);
+
+
+document.addEventListener(
+'keydown',
+event => {
+
+if (event.key === 'Escape') {
+closeBox();
+}
+
+}
+);
+
+</script>
+
+
+</body>
+</html>
